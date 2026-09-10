@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoTrack | Calcula tu huella de carbono</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>🌱 EcoTrack</h1>
+      <p class="subtitle">Registra tu día en lenguaje natural y descubre tu huella de carbono</p>
+    </header>
+
+    <section class="card">
+      <label for="activityInput">Cuéntanos qué hiciste hoy:</label>
+      <textarea
+        id="activityInput"
+        placeholder='Ej: "Hoy comí carne y viajé 20km en bus"'
+        rows="4"
+      ></textarea>
+      <button id="calculateBtn">Calcular huella de carbono</button>
+    </section>
+
+    <section id="resultCard" class="card result hidden">
+      <h2>Resultado estimado</h2>
+      <p class="co2-value" id="co2Value">0 kg CO2</p>
+      <ul id="detailsList"></ul>
+    </section>
+
+    <footer>
+      <p>Prototipo MVP construido con Vibe Coding · Cursor + Replit</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
